@@ -13,6 +13,10 @@ app.use(cors({ origin: '*' }));
 
 const mistral = new MistralClient(process.env.MISTRAL_API_KEY);
 
+app.get('/ping', (req, res) => {
+  res.send('ok');
+});
+
 app.post('/api/chat', async (req, res) => {
   const { messages } = req.body;
 
