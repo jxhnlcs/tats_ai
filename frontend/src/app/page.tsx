@@ -107,7 +107,7 @@ export default function ChatPage() {
     saveChatsToLocalStorage(updatedChats)
 
     try {
-      const { data } = await axios.post('http://localhost:3333/api/chat', {
+      const { data } = await axios.post('https://tats-ai.onrender.com/api/chat', {
         messages: updatedMessages,
       })
       const newMessages = [
