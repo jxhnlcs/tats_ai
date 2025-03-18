@@ -33,6 +33,22 @@ Tats é um projeto de chat que utiliza inteligência artificial para responder p
 - **dotenv:** Para gerenciamento de variáveis de ambiente.
 - **Mistral API:** Utilizada através de um client customizado para processar mensagens e retornar respostas da IA especializada em farmácia.
 
+## Como Executar o Projeto
+
+**Backend**  
+1. Navegue até a pasta `backend`.  
+2. Execute `npm install` para instalar as dependências.  
+3. Crie um arquivo `.env` na pasta `backend` com as seguintes variáveis:  
+   - MISTRAL_API_KEY=SuaChaveDaMistral  
+   - PORT=3333  
+4. Inicie o servidor com `npm run dev`.
+
+**Frontend**  
+1. Navegue até a pasta `frontend`.  
+2. Execute `npm install` para instalar as dependências.  
+3. Inicie o projeto Next.js com `npm run dev`.  
+4. Acesse o projeto no navegador em `http://localhost:3000`.
+
 ## Finalidade do Projeto
 
 O projeto foi desenvolvido para facilitar o acesso a informações farmacêuticas de forma interativa, utilizando inteligência artificial. Ele tem como objetivo oferecer uma ferramenta que responda dúvidas sobre medicamentos, posologia, interações e demais tópicos relacionados à farmácia, auxiliando profissionais e estudantes da área.
